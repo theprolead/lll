@@ -17,9 +17,9 @@ class CreateOrdersTable extends Migration
             $table->bigIncrements('id');
             $table->timestamps();
             $table->integer('user_id');
-            $table->integer('status_id')->nullable();
+            $table->integer('current_state')->nullable();
             $table->string('description')->nullable();
-            $table->float('price');
+            $table->float('total_price');
         });
     }
 

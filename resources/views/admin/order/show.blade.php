@@ -1,6 +1,5 @@
 
-
-@extends('layouts.frontend.main')
+@extends('layouts.admin.main')
 
 @section('content')
     <div class="container">
@@ -15,7 +14,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                            <h1>order show {{$index}}</h1>
+                        <h1> admin order show  {{$index}} </h1>
                     </div>
                 </div>
             </div>

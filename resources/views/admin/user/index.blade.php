@@ -1,5 +1,5 @@
 
-@extends('layouts.frontend.main')
+@extends('layouts.user.main')
 
 @section('content')
     <div class="container">
@@ -14,7 +14,7 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                            <h1>product index</h1>
+                        <h1>admin user index</h1>
                     </div>
                 </div>
             </div>

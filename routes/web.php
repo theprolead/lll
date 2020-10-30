@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,10 +15,20 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+//User routes
+Route::get('/', 'HomeController@index')->name('home');
+Route::get("/home", "UserHomeController@index")->name('home');
+Route::get("/product/", "UserProductController@index")->name('product');
+Route::get("/product/{id}", "UserProductController@show");
+Route::get("/order/", "UserOrderController@index")->name('order');
+Route::get("/order/{id}", "UserOrderController@show");
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get("/my/", "FrontHomeController@index")->name('home');
-Route::get("/products/", "FrontProductController@index")->name('products');
-Route::get("/products/{id}", "FrontProductController@show");
-Route::get("/orders/", "FrontOrderController@index")->name('orders');
-Route::get("/orders/{id}", "FrontOrderController@show");
+
+//admin routes
+Route::get("/admin", "AdminHomeController@index")->name('home');
+Route::get("/admin/product/", "AdminProductController@index")->name('product');
+Route::get("/admin/product/{id}", "AdminProductController@show");
+Route::get("/admin/order/", "AdminOrderController@index")->name('order');
+Route::get("/admin/order/{id}", "AdminOrderController@show");
+Route::get("/admin/User", "AdminOrderController@index");
+Route::get("/admin/User/{id}", "AdminOrderController@show");

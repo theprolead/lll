@@ -17,10 +17,10 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Pages Links -->
                 <li>
-                    <a class="nav-link" href="{{ route('products') }}">Products</a>
+                    <a class="nav-link" href="{{ route('product') }}">Products</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="{{ route('orders') }}">Orders</a>
+                    <a class="nav-link" href="{{ route('order') }}">Orders</a>
                 </li>
                 <!-- Authentication Links -->
                 @guest

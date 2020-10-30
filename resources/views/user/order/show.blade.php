@@ -1,4 +1,6 @@
-@extends('layouts.frontend.main')
+
+
+@extends('layouts.user.main')
 
 @section('content')
     <div class="container">
@@ -13,10 +15,14 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        You are logged in!
+                            <h1>order show {{$index}}</h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 @endsection
+
+
+
+

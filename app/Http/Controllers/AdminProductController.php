@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class FrontOrderController extends Controller
+class AdminProductController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,9 +23,9 @@ class FrontOrderController extends Controller
      */
     public function index()
     {
-        return view('frontend.order.index');
+        return view('admin.product.index');
     }
     public  function show($i){
-        return view('frontend.order.show', array('index'=>$i));
+        return view('admin.product.show', array('index'=>$i));
     }
 }
